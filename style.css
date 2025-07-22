@@ -197,17 +197,6 @@ h2 {
     background: rgba(0, 0, 0, 0.4);
     padding: 80px 0;
 }
-#Ex-Head {
-    max-width: 95%;
-    width: 95%;
-}
-#Ex-Head:hover {
-    background-color: #ff6b6b;
-    color: #ffffff;
-    border-color: #ff5252;
-    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
-    transform: translateY(-5px) scale(1.05);
-}
 
 #experience-comparison .container {
     max-width: 95%;
