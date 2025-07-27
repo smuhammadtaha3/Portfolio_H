@@ -30,9 +30,9 @@ a {
     justify-content: space-between;
     align-items: center;
     max-width: 95%;
-    width: 95%;
+    width: 63%;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .nav ul {
@@ -48,12 +48,12 @@ a {
 }
 
 .hero {
-    min-height: 100vh;
+    min-height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 12px 5px;
     background: url("./images/r_Background.jpg") center center/cover no-repeat;
 }
 
@@ -106,7 +106,7 @@ h2 {
     grid-template-columns: 1fr 1fr; /* Equal columns */
     gap: 2rem;
     max-width: 95%;
-    width: 95%;
+    width: 63%;
     margin: auto;
 }
 
