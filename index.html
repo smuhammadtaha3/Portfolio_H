@@ -24,11 +24,12 @@
             <div class="logo">Syed Muhammad Taha</div>
             <nav>
                 <ul>
-                    <li><a href="#about-comparison">About</a></li>
-                    <li><a href="#experience-comparison">Experience</a></li>
-                    <li><a href="#education-comparison">Education</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -37,7 +38,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="container">
+        <div class="hero-container">
             <div class="hero-content">
                 <p class="intro">Hi, my name is</p>
                 <h1>Syed Muhammad Taha</h1>
@@ -53,96 +54,115 @@
     </section>
 
     <!-- About Section -->
-    <section id="about-comparison">
+    <section class="section" id="about">
         <div class="container">
-            <div class="row">
-                <div class="text-col">
-                    <div class="comparison-block text-block">
-                        <h2>About Me</h2>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-card">
                         <p>
                             Passionate AI/ML engineer skilled in Python and
                             core ML algorithms. Quick learner with hands-on
                             projects, diving into NLP and Deep Learning,
                             ready to contribute to impactful AI work.
                         </p>
+                        <p>
+                            Currently pursuing my Bachelor's in Information Technology 
+                            while working as an ODOO Developer. I enjoy solving complex 
+                            problems and building scalable solutions that make a difference.
+                        </p>
                     </div>
                 </div>
-                <div class="image-col">
-                    <div class="comparison-block image-block"></div>
+                <div class="about-image">
+                    <div class="image-card">
+                        <div class="profile-image"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience-comparison">
+    <section class="section" id="experience">
         <div class="container">
             <h2>Experience</h2>
-            <div class="experience-row">
-                <div class="experience-text-col">
-                    <div class="comparison-block experience-text-block">
-                        <div class="exp-card">
+            <div class="experience-content">
+                <div class="experience-list">
+                    <div class="exp-card">
+                        <div class="exp-header">
                             <h3>ODOO Developer</h3>
-                            <p>Company, Lahore<br>2023 - Present</p>
-                            <ul>
-                                <li>Developed and deployed ML models for various applications</li>
-                                <li>Implemented NLP solutions for text processing</li>
-                                <li>Collaborated with cross-functional teams on AI projects</li>
-                            </ul>
+                            <span class="duration">2023 - Present</span>
                         </div>
-                        <div class="exp-card">
-                            <h3>Python Developer Intern</h3>
-                            <p>Tech Startup, Lahore<br>2022 - 2023</p>
-                            <ul>
-                                <li>Developed backend services using Python</li>
-                                <li>Assisted in building Odoo modules</li>
-                                <li>Participated in code reviews and testing</li>
-                            </ul>
-                        </div>
+                        <p class="company">FairChance for CRM, Lahore</p>
+                        <ul class="exp-details">
+                            <li>Developed and deployed ML models for various applications</li>
+                            <li>Implemented NLP solutions for text processing</li>
+                            <li>Collaborated with cross-functional teams on AI projects</li>
+                            <li>Built custom Odoo modules for business automation</li>
+                        </ul>
+                        <div class="company-logo company1-logo"></div>
                     </div>
-                </div>
-                <div class="experience-images-col">
-                    <a href="https://www.linkedin.com/company/fairchance-for-crm/" target="_blank" rel="noopener">
-                        <div class="comparison-block experience-image-block company1-image"></div>
-                    </a>
-                    <div class="comparison-block experience-image-block company2-image"></div>
+                    
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Python Developer Intern</h3>
+                            <span class="duration">2022 - 2023</span>
+                        </div>
+                        <p class="company">Creative Dots, Lahore</p>
+                        <ul class="exp-details">
+                            <li>Developed backend services using Python</li>
+                            <li>Assisted in building Odoo modules</li>
+                            <li>Participated in code reviews and testing</li>
+                            <li>Learned best practices in software development</li>
+                        </ul>
+                        <div class="company-logo company2-logo"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education-comparison">
+    <section class="section" id="education">
         <div class="container">
             <h2>Education</h2>
-            <div class="education-row">
-                <div class="education-text-col">
-                    <div class="comparison-block education-text-block">
-                        <div class="edu-card">
-                            <h3>BB IT (Ongoing)</h3>
-                            <p>IBIT Dept, University of Punjab, Lahore<br>2022 - 2026</p>
+            <div class="education-content">
+                <div class="education-list">
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <h3>Bachelor of Information Technology</h3>
+                            <span class="duration">2022 - 2026</span>
                         </div>
-                        <div class="edu-card">
-                            <h3>Intermediate ICS</h3>
-                            <p>Govt. College of Science, Lahore<br>2020 - 2022</p>
-                        </div>
-                        <div class="edu-card">
-                            <h3>Matric (Computer Science)</h3>
-                            <p>Govt. High School, Lahore<br>2018 - 2020</p>
-                        </div>
+                        <p class="institution">IBIT Department, University of Punjab, Lahore</p>
+                        <p class="status">Currently Pursuing</p>
+                        <a href="https://www.pu.edu.pk/" target="_blank" rel="noopener" class="institution-link">
+                            <div class="institution-logo university-logo"></div>
+                        </a>
                     </div>
-                </div>
-                <div class="education-images-col">
-                    <a href="https://www.pu.edu.pk/" target="_blank" rel="noopener">
-                        <div class="comparison-block education-image-block university-image"></div>
-                    </a>
-                    <a href="https://sites.google.com/gcslahore.edu.pk/ggcs/home" target="_blank" rel="noopener">
-                        <div class="comparison-block education-image-block college-image"></div>
-                    </a>
-                    <a href="https://locator.eduportalbd.com/global/pk/details.php?ins=30886" target="_blank"
-                        rel="noopener">
-                        <div class="comparison-block education-image-block school-image"></div>
-                    </a>
+                    
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <h3>Intermediate in Computer Science</h3>
+                            <span class="duration">2020 - 2022</span>
+                        </div>
+                        <p class="institution">Government College of Science, Lahore</p>
+                        <p class="status">Completed</p>
+                        <a href="https://sites.google.com/gcslahore.edu.pk/ggcs/home" target="_blank" rel="noopener" class="institution-link">
+                            <div class="institution-logo college-logo"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <h3>Matriculation (Computer Science)</h3>
+                            <span class="duration">2018 - 2020</span>
+                        </div>
+                        <p class="institution">Government High School, Lahore</p>
+                        <p class="status">Completed</p>
+                        <a href="https://locator.eduportalbd.com/global/pk/details.php?ins=30886" target="_blank" rel="noopener" class="institution-link">
+                            <div class="institution-logo school-logo"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,50 +171,77 @@
     <!-- Projects Section -->
     <section class="section" id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Hotel Reviews System</h3>
-                    <p>ML-based sentiment analysis system for hotel reviews using NLP techniques.</p>
-                    <span>Python, Pandas, Scikit-learn</span>
-                    <div class="project-links">
-                        <a href="https://github.com/smuhammadtaha3/Machine-Learning" class="project-btn" target="_blank"
-                            rel="noopener">
-                            View Code
-                        </a>
+                    <div class="project-header">
+                        <h3>Hotel Reviews System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/smuhammadtaha3/Machine-Learning" class="project-btn" target="_blank" rel="noopener">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <p>ML-based sentiment analysis system for hotel reviews using advanced NLP techniques and machine learning algorithms.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>NLP</span>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <h3>Hospital Management System</h3>
-                    <p>Odoo-based ERP with automated emails and dynamic rendering.</p>
-                    <span>Python, Odoo</span>
-                    <div class="project-links">
-                        <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main" class="project-btn"
-                            target="_blank" rel="noopener">
-                            View Code
-                        </a>
+                    <div class="project-header">
+                        <h3>Hospital Management System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main" class="project-btn" target="_blank" rel="noopener">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <p>Comprehensive Odoo-based ERP system with automated email notifications and dynamic report rendering.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Odoo</span>
+                        <span>PostgreSQL</span>
+                        <span>XML</span>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <h3>Travels Management System</h3>
-                    <p>Odoo module for managing travel bookings and operations.</p>
-                    <span>Python, Odoo</span>
-                    <div class="project-links">
-                        <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main/travels_management"
-                            class="project-btn" target="_blank" rel="noopener">
-                            View Code
-                        </a>
+                    <div class="project-header">
+                        <h3>Travels Management System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main/travels_management" class="project-btn" target="_blank" rel="noopener">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <p>Complete Odoo module for managing travel bookings, operations, and customer relationships.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Odoo</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <h3>MS Paint Clone</h3>
-                    <p>Graphical MS Paint clone developed in C with dynamic shape creation.</p>
-                    <span>C</span>
-                    <div class="project-links">
-                        <a href="https://github.com/smuhammadtaha3/PF" class="project-btn" target="_blank"
-                            rel="noopener">
-                            View Code
-                        </a>
+                    <div class="project-header">
+                        <h3>MS Paint Clone</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/smuhammadtaha3/PF" class="project-btn" target="_blank" rel="noopener">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <p>Feature-rich graphical MS Paint clone with dynamic shape creation and advanced drawing tools.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>Graphics</span>
+                        <span>Algorithms</span>
+                        <span>UI/UX</span>
                     </div>
                 </div>
             </div>
@@ -204,87 +251,102 @@
     <!-- Skills Section -->
     <section class="section" id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span>Python</span>
-                <span>C</span>
-                <span>C++</span>
-                <span>Pandas</span>
-                <span>TensorFlow</span>
-                <span>PyTorch</span>
-                <span>Odoo</span>
-                <span>NLP</span>
-                <span>OpenCV</span>
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>ML/AI Frameworks</h3>
+                    <div class="skills-list">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skills-list">
+                        <span>Odoo</span>
+                        <span>NLP</span>
+                        <span>OpenCV</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Achievements Section -->
     <section class="section" id="achievements">
-        <div class="a-container">
-            <h2>Certifications & Societal Memberships</h2>
+        <div class="container">
+            <h2>Certifications & Memberships</h2>
             <div class="achievements-grid">
-
-                <div class="achievements-card">
-                    <img src="./images/ML.jpg"
-                        alt="Achievement 1" class="achieve-image">
-                    <div class="overlay">
-                        <div>
-                            <div class="achieve-text">Macine Learning Engineer, NAVTEC </div>
-                            <div class="achieve-subtitle"> Certified: June,2023 - August,2023.</div>
+                <div class="achievement-card">
+                    <div class="achievement-image ml-cert"></div>
+                    <div class="achievement-overlay">
+                        <div class="achievement-content">
+                            <h3>Machine Learning Engineer</h3>
+                            <p>NAVTEC</p>
+                            <span>June 2023 - August 2023</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="achievements-card">
-                    <img src="./images/achiev_mem.jpg"
-                        alt="Achievement 2" class="achieve-image">
-                    <div class="overlay">
-                        <div>
-                            <div class="achieve-text">Senior Member</div>
-                            <div class="achieve-subtitle">IBIT Sports Society, PU</div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-image sports-member"></div>
+                    <div class="achievement-overlay">
+                        <div class="achievement-content">
+                            <h3>Senior Member</h3>
+                            <p>IBIT Sports Society, PU</p>
+                            <span>Active Member</span>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Contact Me</h2>
-                    <div class="contact-item">
-                        <div class="contact-icon">@</div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:smt771871@gmail.com">smt771871@gmail.com</a></p>
-                        </div>
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">@</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <a href="mailto:smt771871@gmail.com">smt771871@gmail.com</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p><a href="tel:+923223648132">0322-3648132</a></p>
-                        </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <a href="tel:+923223648132">+92 322 3648132</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div class="contact-text">
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/m-taha-549760351/" target="_blank"
-                                    rel="noopener">View Profile</a></p>
-                        </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/m-taha-549760351/" target="_blank" rel="noopener">Connect with me</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🐙</div>
-                        <div class="contact-text">
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/smuhammadtaha3" target="_blank"
-                                    rel="noopener">smuhammadtaha3</a></p>
-                        </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/smuhammadtaha3" target="_blank" rel="noopener">smuhammadtaha3</a>
                     </div>
                 </div>
             </div>
@@ -292,7 +354,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Syed Muhammad Taha. Let's build AI solutions together.</p>
         </div>
