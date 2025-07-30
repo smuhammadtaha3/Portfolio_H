@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    background: #0a192f url("./images/r_Background.jpg") center center/cover no-repeat fixed;
+    background: #0a192f url("./images/back_1.jpg") center center/cover no-repeat fixed;
     color: #ccd6f6;
     line-height: 1.6;
     overflow-x: hidden;
@@ -97,8 +97,9 @@ a:hover {
     justify-content: center;
     text-align: center;
     padding: 8px 5px 6px;
-    background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), 
-                url("./images/r_Background.jpg") center center/cover no-repeat;
+    background-color: transparent;
+    /* background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), 
+                url("./images/r_Background.jpg") center center/cover no-repeat; */
 }
 
 .hero-container {
