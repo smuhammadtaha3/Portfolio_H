@@ -57,6 +57,10 @@ a:hover {
     color: #64ffda;
 }
 
+.logo-img {
+    width: 180px;
+}
+
 .nav ul {
     display: flex;
     gap: 30px;
