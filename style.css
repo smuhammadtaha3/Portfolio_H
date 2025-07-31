@@ -1,7 +1,9 @@
 .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-    }/* Reset and Base Styles */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +60,7 @@ a:hover {
 }
 
 .logo-img {
-    width: 180px;
+    width: 80px;
 }
 
 .nav ul {
@@ -144,9 +146,29 @@ a:hover {
     color: #8892b0;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+    /* ya flex-start for left align */
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #64ffda;
+    color: #64ffda;
+}
+
+.btn-outline:hover {
+    background: #64ffda;
+    color: #0a192f;
+}
+
 .btn {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 0;
+    /* 40px se 0 kar do */
     padding: 15px 35px;
     border: 2px solid #64ffda;
     color: #64ffda;
@@ -286,7 +308,8 @@ h2::after {
 .exp-card {
     position: relative;
     background: rgba(17, 34, 64, 0.8);
-    padding: 40px 120px 40px 40px; /* Right padding increased for logo space */
+    padding: 40px 120px 40px 40px;
+    /* Right padding increased for logo space */
     border-radius: 15px;
     border: 1px solid rgba(100, 255, 218, 0.2);
     backdrop-filter: blur(10px);
@@ -408,7 +431,8 @@ h2::after {
 .edu-card {
     position: relative;
     background: rgba(17, 34, 64, 0.8);
-    padding: 35px 100px 35px 35px; /* Right padding increased for logo space */
+    padding: 35px 100px 35px 35px;
+    /* Right padding increased for logo space */
     border-radius: 15px;
     border: 1px solid rgba(100, 255, 218, 0.2);
     backdrop-filter: blur(10px);
@@ -680,7 +704,7 @@ h2::after {
 }
 
 .sports-member {
-    background-image: url("./images/achiev_mem.jpg");
+    background-image: url("./images/Ibit_Sports_scociety.png");
 }
 
 .achievement-overlay {
@@ -822,18 +846,20 @@ h2::after {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .profile-image {
         height: 220px;
         max-width: 220px;
     }
 
     .exp-card {
-        padding: 25px 25px 60px 25px; /* Bottom padding for mobile logo */
+        padding: 25px 25px 60px 25px;
+        /* Bottom padding for mobile logo */
     }
 
     .edu-card {
-        padding: 25px 25px 60px 25px; /* Bottom padding for mobile logo */
+        padding: 25px 25px 60px 25px;
+        /* Bottom padding for mobile logo */
     }
 
     .company-link,
@@ -1000,7 +1026,8 @@ h2::after {
 
     .exp-card,
     .edu-card {
-        padding: 20px 20px 55px 20px; /* Bottom padding for mobile logo */
+        padding: 20px 20px 55px 20px;
+        /* Bottom padding for mobile logo */
     }
 
     .company-logo,
@@ -1041,6 +1068,7 @@ h2::after {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1056,6 +1084,21 @@ h2::after {
 .achievement-card,
 .contact-card {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+        text-align: left;
+        margin-top: 0;
+        /* Ye bhi 0 kar do */
+    }
 }
 
 /* Smooth transitions for all interactive elements */
