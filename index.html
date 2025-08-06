@@ -201,6 +201,7 @@
                         <h3>AI-Powered Hotel Management System</h3>
                         <a href="https://github.com/smuhammadtaha3/Machine-Learning" target="_blank"
                             class="project-btn">View Project</a>
+                        <!-- Button with data-project attribute -->
                     </div>
                     <p>To classify hotel reviews based on their sentiment —whether the review is Negative, Neutral, or
                         Positive — using machine learning techniques. This helps businesses understand customer feedback
@@ -214,6 +215,8 @@
                         <span>Seaborn</span>
                         <span>RE</span>
                     </div>
+                    <button class="show-images-btn" data-project="Ai-ML" onclick="showProjectImages(this)">Show
+                        Project running Images</button>
                 </div>
 
                 <div class="project-card">
@@ -235,7 +238,8 @@
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Travels Management System -- Odoo</h3>
-                        <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main/travels_management" class="project-btn">View Project</a>
+                        <a href="https://github.com/smuhammadtaha3/My_ODOO_CODE/tree/main/travels_management"
+                            class="project-btn">View Project</a>
                     </div>
                     <p>I have worked onthis project, where I’ve developed form, list, report views, and custom tour
                         card. I also implemented an automated email feature that sends a welcome message upon
@@ -251,7 +255,8 @@
                 <div class="project-card">
                     <div class="project-header">
                         <h3>MS-Paint -- C</h3>
-                        <a href="https://github.com/smuhammadtaha3/PF/tree/main/MS_PAINT(GRP1)" target="_blank" class="project-btn">View Project</a>
+                        <a href="https://github.com/smuhammadtaha3/PF/tree/main/MS_PAINT(GRP1)" target="_blank"
+                            class="project-btn">View Project</a>
                     </div>
                     <p>In This project, we added features of Making shapes with dynamic Values, You can also 'Draw any
                         image by using arrow keys. you can also change colors.
@@ -259,9 +264,40 @@
                     <div class="tech-stack">
                         <span>C</span>
                     </div>
+                    <!-- Button with data-project attribute -->
+                    <button class="show-images-btn" data-project="ms-paint" onclick="showProjectImages(this)">Show
+                        Project running Images</button>
                 </div>
             </div>
         </div>
+
+        <div id="projectImagesModal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Project Images</h3>
+                <div class="images-container">
+                    <div class="image-slide">
+                        <img src="./images/MS_Paint/pic1.jpg" alt="Project Image 1">
+                    </div>
+                    <div class="image-slide">
+                        <img src="./images/MS_Paint/shape_pic.jpg" alt="Project Image 2">
+                    </div>
+                    <div class="image-slide">
+                        <img src="./images/MS_Paint/draw.jpg" alt="Project Image 3">
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="nav-btn" onclick="changeSlide(-1)">❮</button>
+                    <button class="nav-btn" onclick="changeSlide(1)">❯</button>
+                </div>
+                <div class="slide-indicators">
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Skills Section -->
@@ -315,7 +351,7 @@
                         <span>Github Desktop</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>AI Tools</h3>
                     <div class="skills-list">
@@ -387,7 +423,8 @@
                     </div>
                     <div class="contact-info">
                         <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/m-taha-549760351/" target="_blank">https://www.linkedin.com/in/m-taha-549760351/</a>
+                        <a href="https://www.linkedin.com/in/m-taha-549760351/"
+                            target="_blank">https://www.linkedin.com/in/m-taha-549760351/</a>
                     </div>
                 </div>
 
@@ -397,7 +434,8 @@
                     </div>
                     <div class="contact-info">
                         <h3>GitHub</h3>
-                        <a href="https://github.com/smuhammadtaha3" target="_blank">https://github.com/smuhammadtaha3</a>
+                        <a href="https://github.com/smuhammadtaha3"
+                            target="_blank">https://github.com/smuhammadtaha3</a>
                     </div>
                 </div>
 
@@ -474,3 +512,94 @@
 </body>
 
 </html>
+
+<script>
+    // filepath: c:\Users\BD\Documents\GitHub\Portfolio_H\index.html
+    let slideIndex = 1;
+
+    function showProjectImages(button) {
+        const project = button.getAttribute('data-project');
+        const imagesContainer = document.querySelector('.images-container');
+        const slideIndicators = document.querySelector('.slide-indicators');
+
+        // Clear previous images and indicators
+        imagesContainer.innerHTML = '';
+        slideIndicators.innerHTML = '';
+
+        // Define images for each project
+        const projectImages = {
+            'ms-paint': [
+                './images/MS_Paint/pic1.jpg',
+                './images/MS_Paint/shape_pic.jpg',
+                './images/MS_Paint/draw.jpg'
+            ],
+            'Ai-ML': [
+                'images/ML/pic1.jpg',
+                'images/ML/pic_2.jpg',
+                'images/ML/pic_3.jpg',
+                'images/ML/pic_4.jpg'
+            ]
+        };
+
+        // Add images to the modal
+        projectImages[project].forEach((src, index) => {
+            const slide = document.createElement('div');
+            slide.className = 'image-slide';
+            slide.innerHTML = `<img src="${src}" alt="Project Image ${index + 1}">`;
+            imagesContainer.appendChild(slide);
+
+            const indicator = document.createElement('span');
+            indicator.className = 'indicator';
+            indicator.setAttribute('onclick', `currentSlide(${index + 1})`);
+            slideIndicators.appendChild(indicator);
+        });
+
+        // Show the modal
+        document.getElementById('projectImagesModal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        showSlides(slideIndex);
+    }
+
+    function closeModal() {
+        document.getElementById('projectImagesModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        const slides = document.getElementsByClassName('image-slide');
+        const indicators = document.getElementsByClassName('indicator');
+
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+
+        for (let i = 0; i < indicators.length; i++) {
+            indicators[i].classList.remove('active');
+        }
+
+        if (slides[slideIndex - 1]) {
+            slides[slideIndex - 1].style.display = 'block';
+        }
+        if (indicators[slideIndex - 1]) {
+            indicators[slideIndex - 1].classList.add('active');
+        }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+</script>
